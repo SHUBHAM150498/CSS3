@@ -1,0 +1,74 @@
+button{
+    width: 150px;
+    height: 35px;
+    background-color: lightblue;
+    color: white;
+    border: 2px solid black;
+    border-radius: 5px;
+}button:hover{
+    background-color: blanchedalmond ;
+}
+.in_1{
+    font-family: 'Island Moments', cursive;
+    font-size: 40px;
+}
+.in_2{
+width: 100px;
+height: 100px;
+background-color: blueviolet;
+transition: width 2s;
+}
+.in_2:hover{
+    width: 300px;
+}
+.in_3{
+    width: 100px;
+    height: 100px;
+    background-color: burlywood;
+    border-radius: 50%;
+}
+@media  screen and (min-width:200px)and(max-width:400) {
+    .in_3{
+        width: 100px;
+        height: 100px;
+        background-color: yellow;
+        display: block;
+    }
+}
+.in_4{
+    width: 500px;
+    height: 500px;
+    background-color: blue;
+}
+.in_5{
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+    position: relative;
+    border-radius: 50%;
+    animation-name: example;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+@keyframes example{
+    0%{
+        background-color: blue;
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        background-color: yellow;
+        top: 0px;
+        left: 250px;
+    }
+    75%{
+        background-color: green;
+        top: 250px;
+        left: 250px;
+    }
+    100%{
+        background-color: red;
+        top: 250px;
+        left: 0px;
+    }
+}
